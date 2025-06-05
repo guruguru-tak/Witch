@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/home_fg_tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/witch_green"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="님,"
+        android:textSize="26dp"
+        android:textColor="@color/witch_white"
+        app:layout_constraintBottom_toBottomOf="@+id/home_fg_tv_username"
+        app:layout_constraintStart_toEndOf="@+id/home_fg_tv_username" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 약속을 확인해보세요"
+        android:textColor="@color/witch_white"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/home_fg_tv_username"
+        app:layout_constraintTop_toBottomOf="@+id/home_fg_tv_username" />
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/home_fg_cv_calendar"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:mcv_showOtherDates="defaults"
+        app:mcv_arrowColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:mcv_selectionColor="@color/witch_green"
+        app:mcv_weekDayTextAppearance="@style/CustomWeekDayText"
+        app:mcv_headerTextAppearance="@style/CustomWeekDayText"
+        app:mcv_dateTextAppearance="@style/CustomWeekDayText"
+        />
+
+
+    <TextView
+        android:id="@+id/home_fg_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="2025-01-21"
+        android:textColor="@color/witch_gray"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_fg_cv_calendar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_fg_rv_appointment"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_fg_tv_date">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

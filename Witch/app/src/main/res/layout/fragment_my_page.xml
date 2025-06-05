@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mypage.MyPageFragment">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="마이페이지"
+        android:textColor="@color/witch_white"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearanceOverlay="@style/Circle"
+        android:id="@+id/mypage_fg_iv_profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_profile"
+        android:clipToOutline="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+
+    <TextView
+        android:id="@+id/mypage_fg_tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="임수미"
+        android:textColor="@color/witch_white"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_fg_iv_profile_image"
+        app:layout_constraintStart_toStartOf="@+id/mypage_fg_iv_profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_fg_iv_profile_image" />
+
+    <TextView
+        android:id="@+id/mypage_fg_btn_profile_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="프로필 편집하기"
+        android:clickable="true"
+        android:textColor="@color/witch_gray"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_fg_tv_nickname"
+        app:layout_constraintStart_toStartOf="@+id/mypage_fg_tv_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_fg_tv_nickname" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/witch_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/mypage_fg_btn_profile_edit"
+        app:layout_constraintEnd_toEndOf="@+id/mypage_fg_btn_profile_edit"
+        app:layout_constraintStart_toStartOf="@+id/mypage_fg_btn_profile_edit" />
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/witch_dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <LinearLayout
+        android:id="@+id/mypage_fg_ll_private_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="개인정보 관리"
+            android:textColor="@color/witch_white"
+            android:textSize="18dp"
+     />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text=">"
+            android:layout_margin="20dp"
+            android:textColor="@color/witch_white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/witch_dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_fg_ll_private_setting" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/mypage_fg_ll_noti_setting"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view5"-->
+<!--        >-->
+<!---->
+<!--        <LinearLayout-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView11"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="알림설정"-->
+<!--            android:textColor="@color/witch_white"-->
+<!--            android:textSize="18dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView12"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="알림이 오지 않는다면 휴대폰에서\n알림 설정을 허용해주세요!"-->
+<!--                android:textColor="@color/witch_gray"-->
+<!--                android:textSize="14dp" />-->
+
+
+<!--        </LinearLayout>-->
+<!--        <Space-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+
+<!--        <androidx.appcompat.widget.SwitchCompat-->
+<!--            android:id="@+id/textView10"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            app:thumbTint="@color/switch_color_selector"-->
+<!--            app:trackTint="@color/switch_color_selector"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_margin="20dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/view6"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/view5" />-->
+<!--    </LinearLayout>-->
+
+
+<!--    <View-->
+<!--        android:id="@+id/view6"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/witch_dark_gray"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/mypage_fg_ll_noti_setting" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

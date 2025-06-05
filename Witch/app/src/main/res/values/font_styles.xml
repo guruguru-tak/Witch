@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseTextStyle">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+
+    <style name="pt_bold" parent="BaseTextStyle">
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+    </style>
+
+    <style name="pt_semibold" parent="BaseTextStyle">
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+    </style>
+
+    <style name="pt_medium" parent="BaseTextStyle">
+        <item name="android:fontFamily">@font/pretendard_medium</item>
+    </style>
+
+    <style name="pt_regular" parent="BaseTextStyle">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+</resources>

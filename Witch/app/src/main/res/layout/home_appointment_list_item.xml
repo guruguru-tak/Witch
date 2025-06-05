@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/home_appointment_list_item"
+    android:layout_marginVertical="5dp"
+    android:layout_height="50dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/witch_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/home_li_tv_appointment_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="D211"
+        android:textColor="@color/witch_white"
+        android:textSize="14dp"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/home_li_tv_appointment_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:padding="2dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/witch_red"
+        android:text="진행중"
+        android:textColor="@color/witch_white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_li_tv_appointment_group"
+        app:layout_constraintStart_toEndOf="@+id/home_li_tv_appointment_group"
+        app:layout_constraintTop_toTopOf="@+id/home_li_tv_appointment_group" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/home_li_tv_appointment_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="진행중"
+        android:paddingHorizontal="5dp"
+        android:background="@color/design_default_color_error"
+        android:textColor="@color/witch_white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_li_tv_appointment_group"
+        app:layout_constraintStart_toEndOf="@+id/home_li_tv_appointment_group"
+        app:layout_constraintTop_toTopOf="@+id/home_li_tv_appointment_group" />
+
+    <TextView
+        android:id="@+id/home_li_tv_appointment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="약쏙쿠 디자인 회의"
+        android:textSize="14dp"
+        android:textColor="@color/witch_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/home_li_tv_appointment_group"
+        app:layout_constraintTop_toBottomOf="@+id/home_li_tv_appointment_group" />
+
+    <TextView
+        android:id="@+id/home_li_tv_appointment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오후 05:30"
+        android:textSize="14dp"
+        android:textColor="@color/witch_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/home_li_tv_appointment_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home_li_tv_appointment_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

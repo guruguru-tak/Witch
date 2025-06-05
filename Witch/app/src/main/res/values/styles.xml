@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 요일 텍스트 스타일 -->
+    <style name="CustomWeekDayText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/witch_white</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <!-- DatePickerDialog 스타일 -->
+    <style name="CustomDatePickerDialog" parent="@style/ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorPrimary">@color/witch_green</item>
+        <item name="colorOnPrimary">@color/witch_black</item>
+        <item name="materialCalendarHeaderLayout">@style/CustomDatePickerDialogHeaderLayout</item>
+        <item name="buttonBarPositiveButtonStyle">@style/CustomDatePickerDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/CustomDatePickerDialogButton</item>
+    </style>
+
+    <!-- DatePickerDialog 헤더 레이아웃 스타일-->
+    <style name="CustomDatePickerDialogHeaderLayout" parent="@style/Widget.Material3.MaterialCalendar.HeaderLayout">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+
+    <!-- DatePickerDialog 텍스트 버튼 스타일 -->
+    <style name="CustomDatePickerDialogButton" parent="@style/Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/witch_black</item>
+    </style>
+
+    <!-- TimePickerDialog 스타일 -->
+    <style name="CustomTimePickerDialog" parent="@style/ThemeOverlay.Material3.MaterialTimePicker">
+        <item name="colorOnSurface">@color/witch_dark_gray</item>
+        <item name="colorSurfaceContainerHigh">@color/witch_light_green</item>
+        <item name="colorOnPrimary">@color/witch_light_green</item>
+        <item name="colorOutline">@color/witch_black</item>
+        <item name="colorPrimary">@color/witch_black</item>
+        <item name="materialTimePickerStyle">@style/CustomTimePickerDialogBackground</item>
+        <item name="materialClockStyle">@style/CustomTimePickerDialogClock</item>
+        <item name="chipStyle">@style/CustomTimePickerDialogChip</item>
+        <item name="materialButtonOutlinedStyle">@style/CustomTimePickerDialogToggle</item>
+    </style>
+
+    <style name="CustomTimePickerDialogBackground" parent="@style/Widget.Material3.MaterialTimePicker">
+        <item name="backgroundTint">@color/witch_light_green</item>
+    </style>
+
+    <!-- TimePickerDialog 시계 스타일 -->
+    <style name="CustomTimePickerDialogClock" parent="@style/Widget.MaterialComponents.TimePicker.Clock">
+        <item name="android:backgroundTint">@color/witch_dark_gray</item>
+    </style>
+
+    <!-- TimePickerDialog 칩 스타일 -->
+    <style name="CustomTimePickerDialogChip" parent="@style/Widget.MaterialComponents.TimePicker.Display">
+        <item name="android:background">@drawable/box_style</item>
+        <item name="android:backgroundTint">#DAE6D8</item>
+    </style>
+
+    <!-- TimePickerDialog 토글 스타일 -->
+    <style name="CustomTimePickerDialogToggle" parent="@style/Widget.Material3.MaterialTimePicker.Button">
+        <item name="backgroundTint">@color/time_picker_switch_color_selector</item>
+        <item name="strokeColor">@color/witch_black</item>
+    </style>
+
+    <!-- EditText 힌트 스타일 -->
+    <style name="CustomHintText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">@font/pretendard_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!-- RadioButton 스타일 -->
+    <style name="CustomRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/witch_dark_gray</item>
+        <item name="colorControlNormal">#00FF1292</item>
+    </style>
+</resources>

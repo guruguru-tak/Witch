@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.appointment.MapFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/map_frame_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/map_ac_tv_appointment_status"
+                style="@style/pt_semibold"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textColor="@color/witch_black"
+                android:gravity="center"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/map_ac_tv2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/map_ac_tv1" />
+
+
+            <TextView
+                android:id="@+id/map_ac_tv_appointment_name"
+                android:maxWidth="110dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="빵지순례"
+                android:focusable="true"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@color/witch_white"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/map_ac_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="약속 시작까지"
+                android:textColor="@color/witch_white"
+                android:textSize="24sp"
+                android:layout_marginStart="6dp"
+                app:layout_constraintTop_toTopOf="@+id/map_ac_tv_appointment_name"
+                app:layout_constraintLeft_toRightOf="@+id/map_ac_tv_appointment_name"/>
+
+            <TextView
+                android:id="@+id/map_ac_tv_remainder_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="09 : 12"
+                android:textColor="@color/witch_green"
+                android:textSize="32sp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/map_ac_tv_appointment_name" />
+
+
+            <TextView
+                android:id="@+id/map_ac_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_semibold"
+                android:text="남았어요!"
+                android:textColor="@color/witch_green"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="7dp"
+                app:layout_constraintBottom_toBottomOf="@+id/map_ac_tv_remainder_time"
+                app:layout_constraintStart_toEndOf="@+id/map_ac_tv_remainder_time" />
+
+
+            <SeekBar
+                android:id="@+id/map_ac_sb_remainder_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3600"
+                android:progress="0"
+                android:progressTint="@color/witch_green"
+                android:thumb="@drawable/clock"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/map_ac_tv_remainder_time"
+                tools:ignore="MissingConstraints" />
+
+            <FrameLayout
+                android:id="@+id/map_frame_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/map_ac_sb_remainder_time">
+
+                <fragment
+                    android:id="@+id/map_ac_fg"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/map_fg_cl_snack_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/map_ac_iv_snack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/snack_cookie"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toEndOf="@+id/map_ac_iv_snack"
+                        app:layout_constraintTop_toTopOf="@+id/map_ac_iv_snack">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/speech_bubble" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="2dp"
+                            android:text="눌러서 스낵 생성하러 가기!"
+                            android:textColor="@color/witch_white"
+                            android:textSize="10sp" />
+
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            layout="@layout/bottom_sheet_layout" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

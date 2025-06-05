@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bn_group"
+        android:enabled="true"
+        android:title="모임"
+        android:icon="@drawable/baseline_menu_24"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bn_home"
+        android:enabled="true"
+        android:title="홈"
+        android:icon="@drawable/outline_home_24"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bn_mypage"
+        android:enabled="true"
+        android:title="마이페이지"
+        android:icon="@drawable/outline_person_24"
+        app:showAsAction="ifRoom" />
+</menu>

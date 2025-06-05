@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="witch_black">#FF151515</color>
+    <color name="witch_green">#FF58E24E</color>
+    <color name="witch_light_green">#FFEDFBEA</color>
+    <color name="witch_white">#FFF9F9F9</color>
+    <color name="witch_gray">#FFA0A0A0</color>
+    <color name="witch_dark_gray">#FF363636</color>
+    <color name="witch_red">#FFFF0000</color>
+</resources>

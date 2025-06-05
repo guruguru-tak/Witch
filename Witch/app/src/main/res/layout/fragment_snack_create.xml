@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.snack.SnackFragment">
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="1dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="스낵 생성하기"
+        android:textColor="@color/witch_white"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/snack_create_fg_ib_text"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/text_icon"
+        app:layout_constraintEnd_toStartOf="@+id/snack_create_fg_ib_camera"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <TextView
+        android:id="@+id/snack_create_fg_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="텍스트"
+        android:textColor="@color/witch_white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/snack_create_fg_ib_text"
+        app:layout_constraintStart_toStartOf="@+id/snack_create_fg_ib_text"
+        app:layout_constraintTop_toBottomOf="@+id/snack_create_fg_ib_text" />
+
+
+    <ImageButton
+        android:id="@+id/snack_create_fg_ib_camera"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/snack_create_fg_ib_text"
+        app:layout_constraintEnd_toStartOf="@+id/snack_create_fg_ib_record"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/snack_create_fg_ib_text"
+        app:layout_constraintTop_toTopOf="@+id/snack_create_fg_ib_text" />
+
+    <TextView
+        android:id="@+id/snack_create_fg_tv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카메라"
+        android:textColor="@color/witch_white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/snack_create_fg_ib_camera"
+        app:layout_constraintStart_toStartOf="@+id/snack_create_fg_ib_camera"
+        app:layout_constraintTop_toBottomOf="@+id/snack_create_fg_ib_camera" />
+
+
+    <ImageButton
+        android:id="@+id/snack_create_fg_ib_record"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/mic_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/snack_create_fg_ib_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/snack_create_fg_ib_camera"
+        app:layout_constraintTop_toTopOf="@+id/snack_create_fg_ib_camera" />
+
+    <TextView
+        android:id="@+id/snack_create_fg_tv_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음성녹음"
+        android:textColor="@color/witch_white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/snack_create_fg_ib_record"
+        app:layout_constraintStart_toStartOf="@+id/snack_create_fg_ib_record"
+        app:layout_constraintTop_toBottomOf="@+id/snack_create_fg_ib_record" />
+
+
+    <LinearLayout
+        android:id="@+id/snack_create_fg_ll_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/witch_dark_gray"
+        android:orientation="horizontal"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snack_create_fg_tv_text">
+
+        <TextView
+            android:id="@+id/snack_create_fg_ll_tv_text_create"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="생성"
+            android:textColor="@color/witch_white"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/snack_create_fg_ll_ll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/snack_create_fg_ll_tv_text_update"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="수정"
+                android:textColor="@color/witch_white"
+                android:textSize="13dp" />
+
+
+            <TextView
+                android:id="@+id/snack_create_fg_ll_tv_text_delete"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="삭제"
+                android:textColor="@color/witch_white"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/snack_create_fg_ll_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/witch_dark_gray"
+        android:orientation="horizontal"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snack_create_fg_tv_camera">
+
+    <LinearLayout
+        android:id="@+id/snack_create_fg_ll_ll_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/snack_create_fg_ll_tv_camera_create"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="카메라"
+            android:textColor="@color/witch_white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/snack_create_fg_ll_tv_camera_photo"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="갤러리"
+            android:textColor="@color/witch_white"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/snack_create_fg_ll_tv_camera_delete"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="사진삭제"
+            android:textColor="@color/witch_white"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/snack_create_fg_ll_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/witch_dark_gray"
+        android:orientation="horizontal"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snack_create_fg_tv_record">
+
+
+        <TextView
+            android:id="@+id/snack_create_fg_ll_tv_record_create"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="녹음하기"
+            android:textColor="@color/witch_white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/snack_create_fg_ll_tv_record_delete"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="파일삭제"
+            android:textColor="@color/witch_white"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/snack_create_fg_ll_bitmap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="@color/witch_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space">
+
+
+        <ImageView
+            android:id="@+id/snack_create_fg_iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/witch_black"
+            android:clipToOutline="true"
+            android:src="@color/witch_black" />
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/snack_create_fg_fl_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.camera.view.PreviewView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/snack_create_fg_pv_image"
+                android:background="@color/witch_black"
+                android:clipToOutline="true">
+
+            </androidx.camera.view.PreviewView>
+
+            <ImageView
+                android:id="@+id/snack_create_fg_iv_camera_exchange"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/camera_change"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="-60dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/snack_create_fg_iv_camera_shot"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/camera_shot"
+                android:layout_gravity="bottom|center_horizontal"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/snack_create_fg_iv_camera_cancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/camera_cancel"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="fitXY"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/snack_create_fg_tv_bitmap_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="10dp"
+            android:text="아니요"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/snack_create_fg_btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="업로드"
+        android:textColor="@color/witch_black"
+        android:backgroundTint="@color/witch_green"
+        app:layout_constraintBottom_toBottomOf="@+id/tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

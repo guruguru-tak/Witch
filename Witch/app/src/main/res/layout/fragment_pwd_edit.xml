@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mypage.PwdEditFragment">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="비밀번호 변경"
+        android:textColor="@color/witch_white"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기존 비밀번호를 입력해주세요."
+        android:textColor="@color/witch_green"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <EditText
+        android:id="@+id/pwd_edit_fg_et_origin_pwd"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="10dp"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:maxLength="16"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/box_style"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새로운 비밀번호를 입력해주세요."
+        android:textColor="@color/witch_green"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_edit_fg_et_origin_pwd" />
+
+    <EditText
+        android:id="@+id/pwd_edit_fg_et_new_pwd"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="10dp"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:maxLength="16"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/box_style"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/pwd_edit_fg_tv_same_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기존 비밀번호와 동일해요."
+        android:paddingStart="30dp"
+        android:visibility="invisible"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/witch_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_edit_fg_et_new_pwd" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새로운 비밀번호를 다시 한번 입력해주세요."
+        android:textColor="@color/witch_green"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_edit_fg_et_new_pwd" />
+
+    <EditText
+        android:id="@+id/pwd_edit_fg_et_new_pwd_twice"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="10dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:maxLength="16"
+        android:background="@drawable/box_style"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/pwd_edit_fg_tv_password_dupl_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호가 일치하지 않아요."
+        android:paddingStart="30dp"
+        android:visibility="invisible"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/witch_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_edit_fg_et_new_pwd_twice" />
+
+    <Button
+        android:id="@+id/pwd_edit_fg_btn_change_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 변경"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/witch_black"
+        android:backgroundTint="@color/witch_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Witch" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="android:statusBarColor">@color/witch_black</item>
+        <item name="android:windowBackground">@color/witch_black</item>
+        <item name="android:colorPrimary">@color/witch_green</item>
+        <item name="itemActiveIndicatorStyle">@color/witch_green</item>
+
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

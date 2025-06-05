@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.group.GroupEditFragment">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="모임 정보 수정"
+        android:textColor="@color/witch_white"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="변경할 모임 이름을 작성해주세요."
+        android:textColor="@color/witch_green"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+
+    <EditText
+        android:id="@+id/group_edit_fg_et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box_style"
+        android:backgroundTint="@color/witch_white"
+        android:hint="모임 이름을 입력해주세요."
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/group_edit_fg_btn_dupl_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/group_edit_fg_btn_dupl_check"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/square_btn"
+        android:backgroundTint="@color/witch_green"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="중복체크"
+        android:textColor="@color/witch_black"
+        app:layout_constraintBottom_toBottomOf="@+id/group_edit_fg_et_nickname"
+        app:layout_constraintEnd_toEndOf="@+id/group_edit_fg_et_nickname"
+        app:layout_constraintTop_toTopOf="@+id/group_edit_fg_et_nickname" />
+
+
+    <Button
+        android:id="@+id/group_edit_fg_btn_name_change"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="163dp"
+        android:backgroundTint="@color/button_color_selector"
+        android:gravity="center"
+        android:text="모임 이름 변경"
+        android:textColor="@color/witch_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_edit_fg_et_nickname" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="모임 사진을 업로드해주세요."
+        android:textColor="@color/witch_green"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/group_edit_fg_et_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/group_edit_fg_btn_name_change" />
+
+    <ImageView
+        android:id="@+id/group_edit_fg_iv_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/circle_shape"
+        android:clipToOutline="true"
+        android:src="@color/cardview_light_background"
+        app:layout_constraintEnd_toStartOf="@+id/group_edit_fg_btn_image_upload"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <TextView
+        android:id="@+id/group_edit_fg_btn_image_upload"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/square_btn"
+        android:backgroundTint="@color/witch_green"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="업로드"
+        android:textColor="@color/witch_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/group_edit_fg_iv_profile_image"
+        app:layout_constraintTop_toTopOf="@+id/group_edit_fg_iv_profile_image" />
+
+    <TextView
+        android:id="@+id/group_edit_fg_btn_image_delete"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:background="@drawable/square_btn"
+        android:backgroundTint="@color/witch_gray"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="삭제"
+        android:textColor="@color/witch_black"
+        app:layout_constraintBottom_toBottomOf="@+id/group_edit_fg_iv_profile_image"
+        app:layout_constraintStart_toStartOf="@+id/group_edit_fg_btn_image_upload"
+        app:layout_constraintTop_toBottomOf="@+id/group_edit_fg_btn_image_upload" />
+
+    <Button
+        android:id="@+id/group_edit_fg_btn_photo_change"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/witch_green"
+        android:gravity="center"
+        android:text="사진 변경"
+        android:textColor="@color/witch_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_edit_fg_iv_profile_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
