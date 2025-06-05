@@ -31,36 +31,22 @@
 
 ### Back-End
 
-<img src="https://img.shields.io/badge/spring-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring boot-%236DB33F.svg?&style=for-the-badge&logo=spring boot&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring security-%236DB33F.svg?&style=for-the-badge&logo=spring security&logoColor=white" />
-<img src="https://img.shields.io/badge/mysql-%234479A1.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/redis-%23DC382D.svg?&style=for-the-badge&logo=redis&logoColor=white" />
-<img src="https://img.shields.io/badge/apache%20kafka-%23231F20.svg?&style=for-the-badge&logo=apache%20kafka&logoColor=white" />
-<img src="https://img.shields.io/badge/firebase-%23FFCA28.svg?&style=for-the-badge&logo=firebase&logoColor=black" />
-<img src="https://img.shields.io/badge/Amazon S3-569A31?&style=for-the-badge&logo=amazons3&logoColor=white" />
-<img src="https://img.shields.io/badge/Amazon EC2-FF9900?&style=for-the-badge&logo=amazonec2&logoColor=black" />
+<img src="https://img.shields.io/badge/spring-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white" />
+<img src="https://img.shields.io/badge/Spring%20Security-6DB33F.svg?style=for-the-badge&logo=springsecurity&logoColor=white" /> <img src="https://img.shields.io/badge/mysql-%234479A1.svg?&style=for-the-badge&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/redis-%23DC382D.svg?&style=for-the-badge&logo=redis&logoColor=white" /> 
+<img src="https://img.shields.io/badge/apache%20kafka-%23231F20.svg?&style=for-the-badge&logo=apache%20kafka&logoColor=white" /> <img src="https://img.shields.io/badge/firebase-%23FFCA28.svg?&style=for-the-badge&logo=firebase&logoColor=black" /> <img src="https://img.shields.io/badge/Amazon S3-569A31?&style=for-the-badge&logo=amazons3&logoColor=white" /> <img src="https://img.shields.io/badge/Amazon EC2-FF9900?&style=for-the-badge&logo=amazonec2&logoColor=black" />
 
 ### Android
 
-<img src="https://img.shields.io/badge/android%20studio-%233DDC84.svg?&style=for-the-badge&logo=android%20studio&logoColor=white" />
-<img src="https://img.shields.io/badge/google%20maps-%234285F4.svg?&style=for-the-badge&logo=google%20maps&logoColor=white" />
+<img src="https://img.shields.io/badge/android%20studio-%233DDC84.svg?&style=for-the-badge&logo=android%20studio&logoColor=white" /> <img src="https://img.shields.io/badge/google%20maps-%234285F4.svg?&style=for-the-badge&logo=google%20maps&logoColor=white" />
 
 ### CI/CD
 
-<img src="https://img.shields.io/badge/docker-%232496ED.svg?&style=for-the-badge&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/kubernetes-%23326CE5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white" />
-<img src="https://img.shields.io/badge/helm-%230F1689.svg?&style=for-the-badge&logo=helm&logoColor=white" />
-<img src="https://img.shields.io/badge/jenkins-%23D24939.svg?&style=for-the-badge&logo=jenkins&logoColor=white" />
-<img src="https://img.shields.io/badge/Argo-EF7B4D?style=for-the-badge&logo=argo&logoColor=white"/>
+<img src="https://img.shields.io/badge/docker-%232496ED.svg?&style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/kubernetes-%23326CE5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white" /> <img src="https://img.shields.io/badge/helm-%230F1689.svg?&style=for-the-badge&logo=helm&logoColor=white" /> <img src="https://img.shields.io/badge/jenkins-%23D24939.svg?&style=for-the-badge&logo=jenkins&logoColor=white" /> <img src="https://img.shields.io/badge/Argo-EF7B4D?style=for-the-badge&logo=argo&logoColor=white"/>
 
 ### Co-Work
 
-<img src="https://img.shields.io/badge/gitlab-%23FCA121.svg?&style=for-the-badge&logo=gitlab&logoColor=orange" />
-<img src="https://img.shields.io/badge/jira-%230052CC.svg?&style=for-the-badge&logo=jira&logoColor=white" />
-<img src="https://img.shields.io/badge/notion-%23000000.svg?&style=for-the-badge&logo=notion&logoColor=white" />
-<img src="https://img.shields.io/badge/mattermost-%230072C6.svg?&style=for-the-badge&logo=mattermost&logoColor=white" />
-<img src="https://img.shields.io/badge/figma-%23F24E1E.svg?&style=for-the-badge&logo=figma&logoColor=white" />
+<img src="https://img.shields.io/badge/gitlab-%23FCA121.svg?&style=for-the-badge&logo=gitlab&logoColor=orange" /><img src="https://img.shields.io/badge/jira-%230052CC.svg?&style=for-the-badge&logo=jira&logoColor=white" /><img src="https://img.shields.io/badge/notion-%23000000.svg?&style=for-the-badge&logo=notion&logoColor=white" /><img src="https://img.shields.io/badge/mattermost-%230072C6.svg?&style=for-the-badge&logo=mattermost&logoColor=white" /><img src="https://img.shields.io/badge/figma-%23F24E1E.svg?&style=for-the-badge&logo=figma&logoColor=white" />
+
 
 ## 🧙디렉토리 구조
 
@@ -162,7 +148,7 @@ witch
       <img src="https://github.com/user-attachments/assets/35a47f05-eca1-4333-b6a3-d5d30a8cbe4a" alt="Image" style="width: 100%; height: 100%; object-fit: cover;">
     </td>
     <td align="center" valign="middle">
-      <img src="https://github.com/user-attachments/assets/592be639-bd02-46e0-a6d5-490523e9e3d2" alt="Image" style="width: 100%; height: 100%; object-fit: cover;">
+      <img src="https://github.com/user-attachments/assets/eb28d3d5-415b-430f-bec4-4ebfa2d1f10f" alt="Image" style="width: 450px; height: 150px; object-fit: cover;">
     </td>
     <td align="center" valign="middle">
       <img src="https://github.com/user-attachments/assets/1b20a1f6-c1f7-47dd-8d1b-03f71c03f657" alt="Image" style="width: 100%; height: 100%; object-fit: cover;">
