@@ -1,0 +1,17 @@
+== 모임 관련 API
+
+include::api/generate_group_image_presigned_url.adoc[]
+include::api/check_group_name_duplicate.adoc[]
+include::api/create_group.adoc[]
+include::api/change_group_name.adoc[]
+include::api/get_group_preview.adoc[]
+include::api/create_group_join_request.adoc[]
+include::api/approve_group_join_request.adoc[]
+include::api/reject_group_join_request.adoc[]
+include::api/get_my_group_list.adoc[]
+include::api/get_group_join_request_list.adoc[]
+include::api/get_group_detail.adoc[]
+include::api/get_group_member_list.adoc[]
+include::api/leave_group.adoc[]
+include::api/change_group_name.adoc[]
+include::api/update_group_image.adoc[]

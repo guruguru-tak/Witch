@@ -1,0 +1,11 @@
+== 약속 관련 API
+
+include::api/create_appointment.adoc[]
+include::api/join_appointment.adoc[]
+include::api/exit_appointment.adoc[]
+include::api/delete_appointment.adoc[]
+include::api/get_appointment_list_in_group.adoc[]
+include::api/get_my_appointment_list.adoc[]
+include::api/get_appointment_detail.adoc[]
+include::api/update_appointment_member_position.adoc[]
+include::api/get_appointment_member_position.adoc[]

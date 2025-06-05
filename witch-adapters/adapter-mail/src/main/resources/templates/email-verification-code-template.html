@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>[Witch] 이메일 인증</title>
+</head>
+<body
+    style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f9f9f9; color: #333; margin: 0; padding: 0;">
+<div class="container"
+     style="max-width: 600px; margin: 50px auto; background: #ffffff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden;">
+  <div class="header" style="background: #4CAF50; color: white; padding: 20px; text-align: center;">
+    <h1>이메일 인증 요청</h1>
+  </div>
+  <div class="content" style="padding: 20px;">
+    <p>서비스에 가입해주셔서 감사합니다. 아래 인증 코드를 사용하여 이메일 인증을 완료해주세요.</p>
+    <p>이메일 인증 코드는 다음과 같습니다:</p>
+    <h2 style="color: #4CAF50;">[<span th:text="${emailVerificationCode}"></span>]</h2>
+    <p>감사합니다!<br>서비스 팀 드림</p>
+  </div>
+  <div class="footer"
+       style="background: #f1f1f1; color: #666; padding: 15px; text-align: center; font-size: 14px;">
+    <p>이 이메일은 자동으로 생성된 메시지입니다.</p>
+  </div>
+</div>
+</body>
+</body>
+</html>

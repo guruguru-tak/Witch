@@ -1,0 +1,15 @@
+=== 모임 내 약속 목록 조회
+
+==== Success
+
+operation::appointment-read-controller-test/get_appointments_200[snippets='http-request,path-parameters,request-headers,http-response,response-fields']
+
+==== Failure
+
+===== 존재하지 않는 모임일 시
+
+operation::appointment-read-controller-test/get_appointments_400_group_not_exists[snippets='http-response']
+
+===== 가입하지 않은 모임일 시
+
+operation::appointment-read-controller-test/get_appointments_400_user_not_in_group[snippets='http-response']

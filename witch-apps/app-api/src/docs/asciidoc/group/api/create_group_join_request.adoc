@@ -1,0 +1,19 @@
+=== 모임 가입 요청
+
+==== Success
+
+operation::group-join-controller-test/create_group_join_request_200[snippets='http-request,path-parameters,http-response']
+
+==== Failure
+
+===== 존재하지 않는 모임일 시
+
+operation::group-join-controller-test/create_group_join_request_400_group_not_exists[snippets='http-response']
+
+===== 이미 요청이 존재할 시
+
+operation::group-join-controller-test/create_group_join_request_400_request_already_exists[snippets='http-response']
+
+===== 이미 가입한 모임일 시
+
+operation::group-join-controller-test/create_group_join_request_400_already_joined_group[snippets='http-response']

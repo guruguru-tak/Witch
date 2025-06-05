@@ -1,0 +1,8 @@
+== 스낵 관련 API
+
+include::api/create_snack.adoc[]
+include::api/generate_snack_image_presigned_url.adoc[]
+include::api/generate_snack_sound_presigned_url.adoc[]
+include::api/get_snack_detail.adoc[]
+include::api/delete_snack.adoc[]
+include::api/get_snack_list.adoc[]

@@ -1,0 +1,10 @@
+aws:
+  s3:
+    access-key: test                    # LocalStack 자격 증명
+    secret-key: test                    # LocalStack 자격 증명
+    region: ap-northeast-2
+    endpoint: http://localhost:4566
+witch:
+  s3:
+    bucket-name: witch
+    presigned-url-expiration-seconds: 300

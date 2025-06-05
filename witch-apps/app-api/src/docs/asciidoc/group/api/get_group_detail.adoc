@@ -1,0 +1,5 @@
+=== 모임 상세 조회
+
+==== Success
+
+operation::group-read-controller-test/get_group_detail_200[snippets='http-request,request-headers,http-response,response-fields']

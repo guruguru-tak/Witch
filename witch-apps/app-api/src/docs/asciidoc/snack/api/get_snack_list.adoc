@@ -1,0 +1,19 @@
+=== 스낵 목록 조회
+
+==== Success
+
+operation::snack-read-controller-test/get_snacks_200[snippets='http-request,path-parameters,request-headers,response-fields,http-response']
+
+==== Failure
+
+===== 존재하지 않는 약속일 시
+
+operation::snack-read-controller-test/get_snacks_400_appointment_not_exists[snippets='http-response']
+
+===== 진행 중인 약속이 아닐 시
+
+operation::snack-read-controller-test/get_snacks_400_appointment_is_not_ongoing[snippets='http-response']
+
+===== 사용자가 해당 약속의 구성원이 아닐 시
+
+operation::snack-read-controller-test/get_snacks_400_user_is_not_appointment_member[snippets='http-response']

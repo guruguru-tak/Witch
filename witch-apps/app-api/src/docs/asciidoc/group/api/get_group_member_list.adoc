@@ -1,0 +1,5 @@
+=== 모임 참여자 목록 조회
+
+==== Success
+
+operation::group-member-read-controller-test/get_group_member_list_200[snippets='http-request,request-headers,path-parameters,http-response,response-fields']

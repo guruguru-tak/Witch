@@ -1,0 +1,13 @@
+=== 모임 사진 presigned-url 발급
+
+==== Success
+
+operation::group-image-controller-test/generate_group_image_presigned_url_200[snippets='http-request,request-headers,request-fields,http-response']
+
+==== Failure
+
+===== 파일 포맷 불일치 시
+
+파일 확장자가 jpg, jpeg 또는 png여야 합니다.
+
+operation::group-image-controller-test/generate_group_image_presigned_url_400_unsupported_file_format[snippets='http-response']

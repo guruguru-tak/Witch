@@ -1,0 +1,15 @@
+=== refresh token 재발급 (renew)
+
+==== Success
+
+operation::token-renew-docs-test/renew_200[snippets='http-request,request-fields,http-response,response-fields']
+
+==== Failure
+
+===== 유효하지 않은 refresh token
+
+operation::token-renew-docs-test/renew_401_invalid_refresh_token[snippets='http-response']
+
+===== refresh token 재발급 불가능
+
+operation::token-renew-docs-test/renew_401_refresh_token_not_renewable[snippets='http-response']

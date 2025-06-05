@@ -1,0 +1,27 @@
+=== 약속 생성
+
+==== Success
+
+operation::appointment-create-controller-test/create_appointment_200[snippets='http-request,path-parameters,request-headers,request-fields,http-response']
+
+==== Failure
+
+===== 존재하지 않는 모임일 시
+
+operation::appointment-create-controller-test/create_appointment_400_group_not_exists[snippets='http-response']
+
+===== 가입하지 않은 모임일 시
+
+operation::appointment-create-controller-test/create_appointment_400_not_group_member[snippets='http-response']
+
+===== 데이터 타입이 일치하지 않는 경우
+
+operation::appointment-create-controller-test/create_appointment_400_invalid_data_format[snippets='http-response']
+
+===== 기존 약속과 시간이 충돌하는 경우
+
+operation::appointment-create-controller-test/create_appointment_400_has_ongoing_appointment[snippets='http-response']
+
+===== 약속 시간이 과거인 경우
+
+operation::appointment-create-controller-test/create_appointment_400_past_appointment[snippets='http-response']

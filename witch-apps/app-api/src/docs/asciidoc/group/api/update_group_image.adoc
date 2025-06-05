@@ -1,0 +1,19 @@
+=== 모임 사진 변경
+
+==== Success
+
+operation::group-image-controller-test/change_group_image_200[snippets='http-request,request-headers,request-fields,path-parameters,http-response']
+
+==== Failure
+
+===== 존재하지 않는 모임 사진 변경 시
+
+operation::group-image-controller-test/change_group_image_400_group_not_exists[snippets='http-response']
+
+===== 권한이 없는 모임 사진 변경 시
+
+operation::group-image-controller-test/change_group_image_400_user_is_not_leader[snippets='http-response']
+
+===== 파일의 소유권한이 없는 경우
+
+operation::group-image-controller-test/chang_group_image_400_invalid_file_owner[snippets='http-response']

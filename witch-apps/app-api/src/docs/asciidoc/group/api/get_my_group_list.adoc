@@ -1,0 +1,15 @@
+=== 나의 모임 목록 조회
+
+==== Success
+
+operation::group-read-controller-test/get_my_group_list_200/[snippets='http-request,request-headers,http-response,response-fields']
+
+==== Failure
+
+===== 존재하지 않는 모임일 시
+
+operation::group-read-controller-test/get_group_detail_400_group_not_exists[snippets='http-response']
+
+===== 존재하지 않는 모임일 시
+
+operation::group-read-controller-test/get_group_detail_400_not_group_member[snippets='http-response']

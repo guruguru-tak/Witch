@@ -1,0 +1,23 @@
+=== 스낵 생성
+
+==== Success
+
+operation::snack-create-controller-test/create_snack_200[snippets='http-request,path-parameters,request-headers,request-fields,http-response']
+
+==== Failure
+
+===== 존재하지 않는 약속일 시
+
+operation::snack-create-controller-test/create_snack_400_appointment_not_exists[snippets='http-response']
+
+===== 가입하지 않은 약속일 시
+
+operation::snack-create-controller-test/create_snack_400_not_appointment_member[snippets='http-response']
+
+===== 진행중인 약속이 아닌 경우
+
+operation::snack-create-controller-test/create_snack_400_appointment_not_ongoing[snippets='http-response']
+
+===== 파일의 소유 권한이 없는 경우
+
+operation::snack-create-controller-test/create_snack_400_invalid_file_owner[snippets='http-response']

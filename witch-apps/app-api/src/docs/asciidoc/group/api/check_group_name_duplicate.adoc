@@ -1,0 +1,11 @@
+=== 모임 이름 중복 검사
+
+==== Success
+
+operation::group-name-duplicate-controller-test/check_group_name_unique_200[snippets='http-request,request-headers,query-parameters,http-response']
+
+==== Failure
+
+===== 모임 이름 중복 시
+
+operation::group-name-duplicate-controller-test/check_group_name_unique_400_name_duplicate[snippets='http-response']

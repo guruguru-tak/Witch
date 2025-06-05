@@ -1,0 +1,31 @@
+= Witch 백엔드 API 문서
+김덕윤(팀장) <duk9741@gmail.com>
+// :stylesheet: style/style.css
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toc-title: 목차
+:toclevels: 2
+
+ifdef::backend-html5[]
+++++
+<style>
+h1, h2, h3 {
+  color: #006400; /* 진한 초록색 */
+  font-weight: bold; /* 글씨 두껍게 */
+}
+</style>
+++++
+endif::[]
+
+== 개요
+
+이 API문서는 'Witch' 프로젝트의 산출물입니다.
+
+include::common/common.adoc[]
+include::user/user.adoc[]
+include::auth/auth.adoc[]
+include::group/group.adoc[]
+include::appointment/appointment.adoc[]
+include::snack/snack.adoc[]

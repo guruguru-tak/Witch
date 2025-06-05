@@ -1,0 +1,15 @@
+=== 모임 가입 신청자 목록 조회
+
+==== Success
+
+operation::group-join-controller-test/get_group_join_request_list_200[snippets='http-request,path-parameters,response-fields,http-response']
+
+==== Failure
+
+===== 존재하지 않는 모임의 가입 신청자 목록을 조회할 시
+
+operation::group-join-controller-test/get_group_join_request_list_400_not_exist_group[snippets='http-response']
+
+===== 권한이 없는 모임의 가입 신청자 목록을 조회할 시
+
+operation::group-join-controller-test/get_group_join_request_list_400_user_is_not_leader[snippets='http-response']

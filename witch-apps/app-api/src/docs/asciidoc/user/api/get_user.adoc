@@ -1,0 +1,5 @@
+=== 사용자 정보 조회
+
+==== Success
+
+operation::user-information-controller-test/get_user_200[snippets='http-request,request-headers,http-response,response-fields']

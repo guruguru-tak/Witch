@@ -1,0 +1,8 @@
+witch:
+  email:
+    verification-code:
+      expire-minute: 15
+    verified:
+      expire-minute: 60
+  group:
+    max-participants-count: 30

@@ -1,0 +1,11 @@
+=== 모임 조회(preview)
+
+==== Success
+
+operation::group-read-controller-test/get_group_preview_200/[snippets='http-request,path-parameters,http-response,response-fields']
+
+==== Failure
+
+===== 존재하지 않는 모임 조회 시
+
+operation::group-read-controller-test/get_group_preview_400_not_exist_group_id[snippets='http-response']

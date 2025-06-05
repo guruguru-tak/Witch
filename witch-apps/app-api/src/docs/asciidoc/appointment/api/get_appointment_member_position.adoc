@@ -1,0 +1,15 @@
+=== 약속 참여자 위치 조회
+
+==== Success
+
+operation::read-appoint-member-position-controller-test/get_appointment_member_position_list_200[snippets='http-request,path-parameters,request-headers,http-response,response-fields']
+
+==== Failure
+
+===== 참여하지 않은 약속일 시
+
+operation::read-appoint-member-position-controller-test/get_appointment_member_position_list_400_not_join_appointment[snippets='http-response']
+
+===== 약속이 진행중이지 않거나 존재하지 않을 시
+
+operation::read-appoint-member-position-controller-test/get_appointment_member_position_list_400_not_on_going_appointment[snippets='http-response']

@@ -1,0 +1,26 @@
+=== 모임 가입 요청 수락
+
+==== Success
+
+operation::group-join-controller-test/approve_group_join_request_200[snippets='http-request,path-parameters,http-response']
+
+==== Failure
+
+===== 존재하지 않는 모임 가입 요청일 시
+
+operation::group-join-controller-test/approve_group_join_request_400_group_join_request_not_exists[snippets='http-response']
+
+===== 수락 처리 권한이 없을 시
+
+리더가 아닌 경우 요청을 처리할 수 없습니다.
+
+operation::group-join-controller-test/approve_group_join_request_400_user_is_not_leader[snippets='http-response']
+
+===== 모임 최대 인원을 초과하였을 시
+
+operation::group-join-controller-test/approve_group_join_request_400_exceed_max_participants[snippets='http-response']
+
+===== 이미 가입한 모임일 시
+
+operation::group-join-controller-test/approve_group_join_request_400_user_already_participant[snippets='http-response']
+

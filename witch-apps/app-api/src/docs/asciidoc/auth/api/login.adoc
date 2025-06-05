@@ -1,0 +1,11 @@
+=== 로그인
+
+==== Success
+
+operation::login-docs-test/login_200[snippets='http-request,request-fields,http-response,response-fields']
+
+==== Failure
+
+===== 비밀번호 불일치 시
+
+operation::login-docs-test/login_401[snippets='http-response']

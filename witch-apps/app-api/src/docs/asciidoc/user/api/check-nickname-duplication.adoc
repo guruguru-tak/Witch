@@ -1,0 +1,11 @@
+=== 닉네임 중복 검증
+
+==== Success
+
+operation::user-validation-controller-test/validate_nickname_duplication_200[snippets='http-request,query-parameters,http-response']
+
+==== Failure
+
+===== 닉네임 중복 시
+
+operation::user-validation-controller-test/validate_nickname_duplication_400[snippets='http-response']

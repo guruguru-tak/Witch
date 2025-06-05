@@ -1,0 +1,17 @@
+=== 모임 가입 요청 거절
+
+==== Success
+
+operation::group-join-controller-test/reject_group_join_request_200[snippets='http-request,path-parameters,http-response']
+
+==== Failure
+
+===== 존재하지 않는 모임 가입 요청일 시
+
+operation::group-join-controller-test/reject_group_join_request_400_group_join_request_not_exists[snippets='http-response']
+
+===== 수락 처리 권한이 없을 시
+
+리더가 아닌 경우 요청을 처리할 수 없습니다.
+
+operation::group-join-controller-test/reject_group_join_request_400_user_is_not_leader[snippets='http-response']

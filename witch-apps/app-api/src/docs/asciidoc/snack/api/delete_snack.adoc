@@ -1,0 +1,16 @@
+=== 스낵 삭제
+
+==== Success
+
+operation::snack-delete-controller-test/delete_snack_200[snippets='http-request,path-parameters,request-headers,response-fields,http-response']
+
+==== Failure
+
+===== 존재하지 않는 스낵일 시
+
+operation::snack-delete-controller-test/delete_snack_400_snack_not_exists[snippets='http-response']
+
+===== 요청자가 해당 스낵의 생성자가 아닐 시
+
+operation::snack-delete-controller-test/delete_snack_400_user_is_not_snack_owner[snippets='http-response']
+

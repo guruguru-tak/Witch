@@ -1,0 +1,19 @@
+=== 약속 탈퇴
+
+==== Success
+
+operation::appointment-exit-controller-test/exit_appointment_200[snippets='http-request,path-parameters,request-headers,http-response']
+
+==== Failure
+
+===== 존재하지 않는 약속일 시
+
+operation::appointment-exit-controller-test/exit_appointment_400_appointment_not_exists[snippets='http-response']
+
+===== 약속 참여자가 아닐 시
+
+operation::appointment-exit-controller-test/exit_appointment_400_not_appointment_member[snippets='http-response']
+
+===== 요청자가 해당 약속의 리더일 시
+
+operation::appointment-exit-controller-test/exit_appointment_400_user_is_leader[snippets='http-response']

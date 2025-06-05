@@ -1,0 +1,11 @@
+=== 프로필 사진 변경
+
+==== Success
+
+operation::user-profile-image-controller-test/change_profile_image_200[snippets='http-request,request-headers,request-fields,http-response']
+
+==== Failure
+
+===== 파일 소유권 불일치 시
+
+operation::user-profile-image-controller-test/change_profile_image_400_invalid_file_owner[snippets='http-response']

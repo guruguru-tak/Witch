@@ -1,0 +1,24 @@
+=== 약속 참여
+
+==== Success
+
+operation::appointment-join-controller-test/join_appointment_200[snippets='http-request,path-parameters,request-headers,http-response']
+
+==== Failure
+
+===== 존재하지 않는 약속일 시
+
+operation::appointment-join-controller-test/join_appointment_400_appointment_not_exists[snippets='http-response']
+
+===== 이미 참여중인 약속일 시
+
+operation::appointment-join-controller-test/join_appointment_400_already_appointment_member[snippets='http-response']
+
+===== 약속이 존재하는 그룹에 참여하지 않은 경우
+
+operation::appointment-join-controller-test/join_appointment_400_not_group_member[snippets='http-response']
+
+===== 기존 약속과 시간이 충돌하는 경우
+
+operation::appointment-join-controller-test/join_appointment_400_appointment_time_conflict[snippets='http-response']
+

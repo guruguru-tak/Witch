@@ -1,0 +1,12 @@
+== 사용자 관련 API
+
+include::api/check-email-duplication.adoc[]
+include::api/check-nickname-duplication.adoc[]
+include::api/generate_user_email_verification_code.adoc[]
+include::api/confirm_user_email_verification_code.adoc[]
+include::api/signup.adoc[]
+include::api/get_user.adoc[]
+include::api/change-nickname.adoc[]
+include::api/change-password.adoc[]
+include::api/generate_profile_image_presigned_url.adoc[]
+include::api/update_profile_image.adoc[]

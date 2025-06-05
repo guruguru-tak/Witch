@@ -1,0 +1,11 @@
+=== 이메일 중복 검증
+
+==== Success
+
+operation::user-validation-controller-test/validate_email_duplication_200[snippets='http-request,query-parameters,http-response']
+
+==== Failure
+
+===== 이메일 중복 시
+
+operation::user-validation-controller-test/validate_email_duplication_400[snippets='http-response']

@@ -1,0 +1,15 @@
+=== 이메일 인증 코드 발급
+
+==== Success
+
+operation::user-email-verification-controller-test/generate_user_email_verification_code_200[snippets='http-request,request-fields,http-response']
+
+==== Failure
+
+===== 이메일 형식 불일치 시
+
+operation::user-email-verification-controller-test/generate_user_email_verification_code_400_invalid_email_format[snippets='http-response']
+
+===== 이메일 중복 시
+
+operation::user-email-verification-controller-test/generate_user_email_verification_code_400_duplicated_email[snippets='http-response']
